@@ -5,6 +5,58 @@
     <meta charset = "UTF-8">
     <title> {% block title %} {%endblock%} -|- BhaloChele </title>
 
+    <style>
+
+      input[type=text] {
+      border: none;
+      border-bottom: 2px solid black;
+      }
+
+      input[type=text]:hover {
+      background-color: lightgrey;
+      }
+      
+      input[type=text]:focus {
+      outline: none;
+      border: 2px solid black;
+      background-color: lightgrey;
+      }
+
+      input[type=password] {
+      border: none;
+      border-bottom: 2px solid black;
+      }
+
+      input[type=password]:hover {
+      background-color: lightgrey;
+      }
+      
+      input[type=password]:focus {
+      outline: none;
+      border: 2px solid black;
+      background-color: lightgrey;
+      }
+
+      input[type=submit] {
+      margin: 4px 4px;
+      padding: 2px 6px;
+      border: none;
+      background-color: lightgrey;
+      }
+
+      input[type=submit]:hover {
+      background-color: grey;
+      color: white;
+      cursor: pointer;
+      }
+
+      input[type=submit]:focus {
+      outline: none;
+      color: black;
+      }
+
+      {%block style%}{%endblock%}
+      </style>
   </head>
   {%endblock%}
 

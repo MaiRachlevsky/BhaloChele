@@ -4,20 +4,26 @@
     {{title}}
 {%endblock%}
 
+{%block style%}
+
+p.story {
+font-family: Luminari, fantasy;
+}
+
+{%endblock%}
+
 {% block content %}
   {% if not notAdded %}
   It seems that you have added to this story.
   <br>
   This is the full story.
-  <br>
-  {{text}}
+  <p class="story">{{text}}</p>
   
   {% endif %}
   
   {% if notAdded %}
-  Latest update to {{title}} 
-  <br>
-  {{text}}
+  Latest update to {{title}}:
+  <p class="story">{{text}}</p>
   <br>
   <br>
 	If you want to add to {{title}} <br>
