@@ -1,22 +1,24 @@
 {% extends "base.html" %}
 
 {%block title%}
-    Login
+Login
 {%endblock%}
 
 {% block content %}
-	<center>
+<center>
     <form action="/auth" method="POST">
 	username <br>
 	<input type="text" name="username"></input>
 	<br><br>
-	password <br>
+	password <br> </font>
 	<input type="password" name="password"></input>
 	<br><br>
 	<input type="submit" name="submitButton" value="Login"></input>
       </form> <br> <br>
     <form action="/registerGo" method ="POST">
       <input type="submit" name="register" value="Register"> </input>
-	 </form>
+    </form>
+    
+    
 	</center>
 {%endblock%}

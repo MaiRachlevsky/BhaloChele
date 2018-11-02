@@ -5,9 +5,9 @@
     <meta charset = "UTF-8">
     <title> {% block title %} {%endblock%} -|- BhaloChele </title>
   </head>
-{%endblock%}
+  {%endblock%}
+  	<font face='Impact' color='maroon'
 <body>
-
   {% block response %}
     {% set messages = get_flashed_messages() %}
       {% for message in messages %}
@@ -15,13 +15,14 @@
       {% endfor %}
   {%endblock%}
 
-  {% block content %}
+	{% block content %}
 
-  {%endblock%}
+
+  {%endblock%}</font>
 
   {% block footer %}
   <center>
-	&copy; Team BhaloChele (Good Boy).<br>
+	<font color='blue'>&copy; Team BhaloChele (Good Boy).<br>
 	Yinon Chan, Shin Bamba, Hasif Ahmed, Vincent Chi
   </center>
 	{% endblock %}
